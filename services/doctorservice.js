@@ -122,5 +122,5 @@ app.post("/doctor/register/profileimage", uploadProfileImage.single("profileimag
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Doctor service is running on port ${port}`);
 });
