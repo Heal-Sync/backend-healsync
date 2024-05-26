@@ -3,11 +3,13 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
     username: { type: String, required: true, unique: true, index: true },
-    pass: { type: String, required: true },
+    password: { type: String, required: true },
     name: { type: String, required: true},
     address: { type: String },
-    age: { type: Number },
-    img: { type: String },
+    email: { type: String },
+    phoneNumber: { type: String },
+    dob: { type: String },
+    profileImage: { type: Schema.Types.Mixed },
     medicalhistory: [{
         path: { type: String },
         date: { type: Date },
